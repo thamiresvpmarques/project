@@ -17,13 +17,13 @@
     <!-- Lugar onde será a navegação, contendo logo, links e direcionamentos de páginas. -->
 
     <nav>
-        <img src="img/logo_alunos-azul.jpg" alt="">
+        <img src="Arquivos/arquivos logo/logo_oficial-azul.jpg " alt="">
         <div class="navigation">
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#features">Essência da marca</a></li>
                 <li><a href="#">Cursos</a></li>
-                <li><a href="#">Missão, visão e verbos</a></li>
+                <li><a href="#base">Missão, visão e verbos</a></li>
                 <li><a href="#">Fale conosco</a></li>
             </ul>
         </div>
@@ -44,11 +44,12 @@
     <!-- Parte que desenvolveremos as opções -->
 
     <section id="features">
+      
         <h1>Essência da marca</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
         <div class="fea-base">
             <div class="fea-box">
-                <img src="img/graduation-cap-solid.svg" alt="" width="30px">
+                <img src="_projeto/arquivos/graduation-cap-solid.svg" alt="" width="30px">
                 <h3>Educação</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla id consequatur dolorum pariatur nemo, aut quam porro, veniam corrupti, facere dicta dolores!</p>
             </div>
@@ -62,10 +63,108 @@
                 <h3>Cursos</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla id consequatur dolorum pariatur nemo, aut quam porro, veniam corrupti, facere dicta doloresa!</p>
             </div>
-        </div>
+            
 
-    </section>
+        </div>
+        
+        <!--Precisamos dar um estilo melhor nessa section!-->
+
+</section>
+
+    <section id="base">
+        
+    
+        <div class="text">
+        
+            <h3>Missão</h3>
+            <p>Somos um meio de impacto e desenvolvimento local. Orientamos e preparamos indivíduos para construírem suas próprias trajetórias. Fomentamos a vontade e paixão pelo aprendizado e acreditamos no poder da educação em mostrar e criar novas oportunidades para todos.</p>
+        </div>
+        <div class="text">    
+            <h3>Visão</h3>
+            <p>Nosso objetivo para o futuro é construir uma rede de conexão entre a Educação Complementar, Mercado Empresarial e o suporte aos movimentos Políticos. Queremos ser uma solução privada de política pública, em busca do desenvolvimento local.
+            </p>
+        </div>
+        <div class="text">
+            <h3>Verbos</h3>
+            <p> Acreditamos na ação, na conquista construída também de pequenas vitórias.
+            Idealizamos nosso diálogo a partir de verbos porque estamos em movimento constante.
+            Valorizamos o indivíduo e criamos nosso coletivo a partir
+            das diferenças. Reconhecemos o valor de diferentes vozes
+            e histórias na nossa construção.
+            emos vontade, atitude e determinação. Gostamos de
+            estar junto de pessoas que correm atrás, alcançam
+            objetivos e vivem histórias inspiradoras ao lado de
+            outras pessoas.
+            Fomentamos sonhos. Nascemos de narrativas
+            inspiradoras e crescemos junto à elas. Acolhemos as
+            pequenas vitórias e as tornamos grandes conquistas.
+            Queremos transformar oportunidades em histórias reais.</p>
+            </div>
+    
+
+
+</section>
+
+<!--Formulário-->
+
+<form> 
+    <h2 id="formulario">Formulário para Contato</h2>
+ <div class=".body">
+    <!--Nome e sobrenome-->
+    <fieldset class="grupo">
+    <div class="campo">
+        <label for="grupo"><strong>Nome</strong></label>
+        <input type="text" name="nome" id="nome" required>
+    </div>
+    <div class="campo">
+        <label for="sobrenome"><strong>Sobrenome</strong></label>
+        <input type="text" name="sobrenome" id="sobrenome" required>
+
+    </div>
+    </fieldset>
+    <!--email-->
+    
+      <div class="campo">
+        <label for="email"><strong>Email</strong></label>
+        <input type="email" name="email" id="email" required>
+      </div>
+    <!--Telefone-->
+      <div id="campo">
+        <label for="telefone"><strong>Telefone</strong></label>
+        <input type="telefone" name="telefone" id="telefone" required>
+      </div>
+    
+      
+    <div class="campo">
+        <label for="spartacus"><strong>Como Conheceu a Spartacus</strong></label>
+        <select id="spartacus" required>
+            <option selected disabled value="">Selecione</option>
+            <option>Indicação</option>
+            <option>Instagram</option>
+            <option>Facebook</option>
+            <option>Google</option>
+            <option>Cliente Reincidente</option>
+            </select>
+    </div>
+
+
+      <div class="campo">
+        <label for="vertical de interesse"><strong>Interesse de Contratação</strong></label><br>
+        <select name="contratacao" required>
+            <option selected disabled value="">Selecione</option>
+            <option>Consultoria Empresarial</option>
+            <option>Assessoria Política</option>
+            <option>Cursos Preparatórios</option>
+        </select>
+    
+       </div>
+
+    </div>
+</div>
+ <div><button type="submit" id="enviar" onclick="check_form(); return false;">ENVIAR</button></div>
+</form>
 
 </body>
+
 
 </html>
